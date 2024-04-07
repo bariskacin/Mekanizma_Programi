@@ -309,7 +309,7 @@ namespace WindowsFormsApp1
             θDC = Aci4 - 180;
             θ34 = Aci3 + 180;
 
-            F34 = -DG4 * F * Math.Sin(Radyan(θDG4) - Radyan(ϕ)) / (DC * Math.Sin(Radyan(θDC) - Radyan(θ34)));
+            F34 = DG4 * F * Math.Sin(Radyan(θDG4) - Radyan(ϕ)) / (DC * Math.Sin(Radyan(θDC) - Radyan(θ34)));
 
             F43 = F34;
             F23 = F34;
@@ -438,7 +438,7 @@ namespace WindowsFormsApp1
         public void TorkGrafiginiGoster()
         {
             int OrijinOtelemeX = 50;
-            int OrijinOtelemeY = 50;
+            int OrijinOtelemeY = 200;
 
             //x ve y eksenlerini gösteriyor.
             grafikEkran.DrawLine(KalemKirmizi3, (int)(0 + OrijinOtelemeX), (int)(0 + OrijinOtelemeY), (int)( 360 * OlcekX + OrijinOtelemeX), (int)(0 + OrijinOtelemeY));
