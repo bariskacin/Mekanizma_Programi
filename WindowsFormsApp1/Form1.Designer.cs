@@ -88,12 +88,21 @@
             this.label18 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.pictureBoxGrafikCizdir = new System.Windows.Forms.PictureBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtAcisalHiz3 = new System.Windows.Forms.TextBox();
+            this.txtAcisalHiz2 = new System.Windows.Forms.TextBox();
+            this.txtAcisalHiz1 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrafikCizdir)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_MEKANIZMAYI_CALISTIR_DURDUR
@@ -674,11 +683,93 @@
             this.pictureBoxGrafikCizdir.TabIndex = 27;
             this.pictureBoxGrafikCizdir.TabStop = false;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.txtAcisalHiz3);
+            this.groupBox4.Controls.Add(this.txtAcisalHiz2);
+            this.groupBox4.Controls.Add(this.txtAcisalHiz1);
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Location = new System.Drawing.Point(1385, 487);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(235, 229);
+            this.groupBox4.TabIndex = 28;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Hız Analizi Tablosu";
+            // 
+            // txtAcisalHiz3
+            // 
+            this.txtAcisalHiz3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAcisalHiz3.Location = new System.Drawing.Point(55, 174);
+            this.txtAcisalHiz3.Name = "txtAcisalHiz3";
+            this.txtAcisalHiz3.Size = new System.Drawing.Size(75, 26);
+            this.txtAcisalHiz3.TabIndex = 10;
+            // 
+            // txtAcisalHiz2
+            // 
+            this.txtAcisalHiz2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAcisalHiz2.Location = new System.Drawing.Point(55, 128);
+            this.txtAcisalHiz2.Name = "txtAcisalHiz2";
+            this.txtAcisalHiz2.Size = new System.Drawing.Size(75, 26);
+            this.txtAcisalHiz2.TabIndex = 8;
+            // 
+            // txtAcisalHiz1
+            // 
+            this.txtAcisalHiz1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAcisalHiz1.Location = new System.Drawing.Point(55, 80);
+            this.txtAcisalHiz1.Name = "txtAcisalHiz1";
+            this.txtAcisalHiz1.Size = new System.Drawing.Size(75, 26);
+            this.txtAcisalHiz1.TabIndex = 6;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(15, 76);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(37, 29);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "θ̇1";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(15, 125);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(37, 29);
+            this.label25.TabIndex = 13;
+            this.label25.Text = "θ̇2";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(15, 170);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(37, 29);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "θ̇3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(79, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 29);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "θ̇";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1641, 969);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.pictureBoxGrafikCizdir);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.groupBox3);
@@ -701,6 +792,8 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrafikCizdir)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -766,6 +859,14 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.PictureBox pictureBoxGrafikCizdir;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtAcisalHiz3;
+        private System.Windows.Forms.TextBox txtAcisalHiz2;
+        private System.Windows.Forms.TextBox txtAcisalHiz1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label4;
     }
 }
 

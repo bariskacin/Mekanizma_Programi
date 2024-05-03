@@ -86,6 +86,8 @@ namespace WindowsFormsApp1
 
             STATIK_HESAPLAMA();
 
+            HIZ_ANALIZI();
+
             Aci2++; //Aci2 motorun bağlı olduğu açıdır. Burada saat her tik attığında açıyı artırıyor. 
             Aci2 = Aci2 % 360; //360 dereceyi geçtiğinde tekrar sıfırlamak için Mod (kalan) kullanıldı.
             txtTahrikAcisi.Text = Aci2.ToString(); //Mekanizmayı döndüren tahrik açısı. Yani motorun açısı. 
@@ -101,6 +103,9 @@ namespace WindowsFormsApp1
             KONUM_HESAPLAMA();
 
             STATIK_HESAPLAMA();
+
+            HIZ_ANALIZI();
+
         }
 
         //========================= KONUM HESAPLAMA FONKSİYONLARI =============================
@@ -456,6 +461,30 @@ namespace WindowsFormsApp1
             {
                 pictureBoxGrafikCizdir.Refresh();
             }
+        }
+
+
+        //======================= HIZ HESAPLAMA FONKSİYONLARI =================
+        //======================= HIZ HESAPLAMA FONKSİYONLARI =================
+        //======================= HIZ HESAPLAMA FONKSİYONLARI =================
+
+        double acisalhiz1 = 0;
+        double acisalhiz2 = 15;
+        double acisalhiz3 = 0;
+
+
+        public void HIZ_ANALIZI()
+        {
+            double R3_θ = Convert.ToDouble(txtR3_θ.Text);
+            double R2_θ = Convert.ToDouble(txtR2_θ.Text);
+            double R1_θ = Convert.ToDouble(txtR1_θ.Text);
+
+            acisalhiz1 = -R2 * acisalhiz2 * Math.Sin(Radyan(R3_θ) - Radyan(R2_θ)) / (R1 * Math.Sin(Radyan(R3_θ) - Radyan(R1_θ)));
+            acisalhiz3 = -R2 * acisalhiz2 * Math.Sin(Radyan(R1_θ) - Radyan(R2_θ)) / (R3 * Math.Sin(Radyan(R1_θ) - Radyan(R3_θ)));
+
+            txtAcisalHiz1.Text = acisalhiz1.ToString();
+            txtAcisalHiz2.Text = acisalhiz2.ToString();
+            txtAcisalHiz3.Text = acisalhiz3.ToString();
         }
     }
 }
