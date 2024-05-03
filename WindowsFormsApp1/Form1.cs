@@ -88,6 +88,8 @@ namespace WindowsFormsApp1
 
             HIZ_ANALIZI();
 
+            İVME_Analizi();
+
             Aci2++; //Aci2 motorun bağlı olduğu açıdır. Burada saat her tik attığında açıyı artırıyor. 
             Aci2 = Aci2 % 360; //360 dereceyi geçtiğinde tekrar sıfırlamak için Mod (kalan) kullanıldı.
             txtTahrikAcisi.Text = Aci2.ToString(); //Mekanizmayı döndüren tahrik açısı. Yani motorun açısı. 
@@ -106,6 +108,7 @@ namespace WindowsFormsApp1
 
             HIZ_ANALIZI();
 
+            İVME_Analizi();
         }
 
         //========================= KONUM HESAPLAMA FONKSİYONLARI =============================
@@ -485,6 +488,29 @@ namespace WindowsFormsApp1
             txtAcisalHiz1.Text = acisalhiz1.ToString();
             txtAcisalHiz2.Text = acisalhiz2.ToString();
             txtAcisalHiz3.Text = acisalhiz3.ToString();
+        }
+
+        //======================= İVME HESAPLAMA FONKSİYONLARI =================
+        //======================= İVME HESAPLAMA FONKSİYONLARI =================
+        //======================= İVME HESAPLAMA FONKSİYONLARI =================
+
+        double acisalivme2 = 0;
+        double acisalivme3 = 0;
+
+        public void İVME_Analizi()
+        {
+            double R3_θ = Convert.ToDouble(txtR3_θ.Text);
+            double R2_θ = Convert.ToDouble(txtR2_θ.Text);
+            double R1_θ = Convert.ToDouble(txtR1_θ.Text);
+
+            acisalhiz1 = -R2 * acisalhiz2 * Math.Sin(Radyan(R3_θ) - Radyan(R2_θ)) / (R1 * Math.Sin(Radyan(R3_θ) - Radyan(R1_θ)));
+            acisalhiz3 = -R2 * acisalhiz2 * Math.Sin(Radyan(R1_θ) - Radyan(R2_θ)) / (R3 * Math.Sin(Radyan(R1_θ) - Radyan(R3_θ)));
+
+            acisalivme2 = R2 * acisalhiz2 * acisalhiz2 * Math.Cos(Radyan(R2_θ) - Radyan(R3_θ)) - R3 * acisalhiz3 * acisalhiz3 / (R2 * Math.Sin(Radyan(R2_θ) - Radyan(R3_θ)));
+            acisalivme3 = R2 * acisalhiz2 * acisalhiz2 * Math.Cos(Radyan(R3_θ) - Radyan(R2_θ)) / (R3 * Math.Sin(Radyan(R3_θ) - Radyan(R2_θ)));
+
+            txtIvme2.Text = acisalivme2.ToString();
+            txtIvme3.Text = acisalivme3.ToString();
         }
     }
 }

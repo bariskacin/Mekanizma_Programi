@@ -96,6 +96,12 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtIvme3 = new System.Windows.Forms.TextBox();
+            this.txtIvme2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrafikCizdir)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_MEKANIZMAYI_CALISTIR_DURDUR
@@ -730,9 +737,9 @@
             this.label26.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label26.Location = new System.Drawing.Point(15, 76);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(37, 29);
+            this.label26.Size = new System.Drawing.Size(43, 29);
             this.label26.TabIndex = 12;
-            this.label26.Text = "θ̇1";
+            this.label26.Text = "θ̇ 1";
             // 
             // label25
             // 
@@ -740,9 +747,9 @@
             this.label25.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label25.Location = new System.Drawing.Point(15, 125);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(37, 29);
+            this.label25.Size = new System.Drawing.Size(43, 29);
             this.label25.TabIndex = 13;
-            this.label25.Text = "θ̇2";
+            this.label25.Text = "θ̇ 2";
             // 
             // label14
             // 
@@ -750,9 +757,9 @@
             this.label14.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label14.Location = new System.Drawing.Point(15, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 29);
+            this.label14.Size = new System.Drawing.Size(43, 29);
             this.label14.TabIndex = 14;
-            this.label14.Text = "θ̇3";
+            this.label14.Text = "θ̇ 3";
             // 
             // label4
             // 
@@ -764,11 +771,75 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "θ̇";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.label28);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Controls.Add(this.txtIvme3);
+            this.groupBox5.Controls.Add(this.txtIvme2);
+            this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox5.Location = new System.Drawing.Point(1385, 726);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(235, 229);
+            this.groupBox5.TabIndex = 29;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "İvme Analizi Tablosu";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(79, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(25, 29);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "θ̈̇";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label28.Location = new System.Drawing.Point(15, 125);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(43, 29);
+            this.label28.TabIndex = 13;
+            this.label28.Text = "θ̈̇ 3";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label29.Location = new System.Drawing.Point(15, 76);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(43, 29);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "θ̈̇ 2";
+            // 
+            // txtIvme3
+            // 
+            this.txtIvme3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIvme3.Location = new System.Drawing.Point(55, 128);
+            this.txtIvme3.Name = "txtIvme3";
+            this.txtIvme3.Size = new System.Drawing.Size(135, 26);
+            this.txtIvme3.TabIndex = 8;
+            this.txtIvme3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtIvme2
+            // 
+            this.txtIvme2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtIvme2.Location = new System.Drawing.Point(55, 80);
+            this.txtIvme2.Name = "txtIvme2";
+            this.txtIvme2.Size = new System.Drawing.Size(135, 26);
+            this.txtIvme2.TabIndex = 6;
+            this.txtIvme2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1641, 969);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.pictureBoxGrafikCizdir);
             this.Controls.Add(this.trackBar1);
@@ -794,6 +865,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGrafikCizdir)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,6 +940,12 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtIvme3;
+        private System.Windows.Forms.TextBox txtIvme2;
     }
 }
 
